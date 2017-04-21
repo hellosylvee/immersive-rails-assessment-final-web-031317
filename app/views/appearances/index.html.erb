@@ -1,0 +1,8 @@
+<h1>View Appearances</h1>
+
+<% @appearances.each do |appearance| %>
+<li>
+  Episode: <%= appearance.episode_id %>
+  Rating: <%= appearance.rating %> <%= link_to "View", appearance_path(appearance)%>
+</li>
+<% end %>
